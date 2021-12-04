@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+   
+}
+.box-item{
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.3);
+    padding: 1rem;
+    border-radius: 1rem;
+    margin-top: 2rem;
+}
+.box{
+    box-sizing:border-box;
+}
+.image img{
+    width: 100%;
+}
+.counter {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 138px;
+    height: 50px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
+    padding: 10px 0;
+  }
+.counter .plus,
+.counter .minus {
+    font-size: 25px;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.3);
+    -webkit-box-flex: 33.33%;
+    -ms-flex: 33.33%;
+    flex: 33.33%;
+    max-width: 33.33%;
+    text-align: center;
+    border:none;
+    background: transparent;
+}
+.counter .product-number {
+    font-size: 20px;
+    font-weight: 500;
+    color: #000000;
+    -webkit-box-flex: 33.33%;
+    -ms-flex: 33.33%;
+    flex: 33.33%;
+    max-width: 33.33%;
+    text-align: center;
+    border-left: 1px solid rgba(0, 0, 0, 0.1);
+    border-right: 1px solid rgba(0, 0, 0, 0.1);
+}
+.text h3{
+    font-size: 2rem;
+}
+.close{
+    position: absolute;
+    top: 0;
+    right: 0;
+    
+    
+}
+
+
+@media only screen and (max-width:992px){
+    .text h3{
+        font-size: 1.7rem;
+    }
+    .container{
+        max-width: 100%;
+    }
+}
+
+@media only screen and (max-width:767px){
+    .counter{
+        width: 100px;
+        height: 35px;
+    }
+    h4{
+        font-size: 16px;
+    }
+    .text h3{
+        font-size: 1.5rem;
+        display: inline-block;
+    }
+}
+
+@media only screen and (max-width:575px){
+    .right-txt{
+        position: absolute;
+        right: 1%;
+        bottom: 5%;
+        text-align: center;
+    }
+    .center-text{
+        position: absolute;
+        top: 20%;
+        right: 5%;
+    }
+    .text h3{
+        font-size: 1.3rem;
+    }
+}
+
+@media only screen and (max-width:400px){
+    .right-txt{
+        right: 0;
+        bottom: 2%;
+    }
+    .text h3{
+        font-size: 1.1rem;
+    }
+    .counter{
+        height: 25px;
+    }
+    .content h4,
+    .content p{
+        margin-bottom: 0;
+    }
+}
